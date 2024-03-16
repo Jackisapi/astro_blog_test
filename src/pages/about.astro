@@ -10,6 +10,9 @@ const identity = {
 };
 const skills = ['python','linux','astro(hopefully)']
 
+const content = true;
+const finished = false;
+const goal = 3
 ---
 
 <html lang="en">
@@ -38,6 +41,10 @@ const skills = ['python','linux','astro(hopefully)']
 
 
 <p>But im trying my best</p>
+
+{content && <p>Astro pretty cool</p>}
+{finished && <p>i am finished with the funny tutorial</p>}
+{goal === 3 ? <p>My goal is to finish in 3 days</p>: <p>My Goal is not 3 days</p>}
 
 </body>
 </html>
