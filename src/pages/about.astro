@@ -1,19 +1,43 @@
 ---
+const pageTitle="Funny achieved";
+
+const identity = {
+    name: "Jack lol",
+    country: "Murica",
+    occupation: "Student ;_;",
+    hobbies: ['nerd crap', 'scoot board'],
+
+};
+const skills = ['python','linux','astro(hopefully)']
 
 ---
 
 <html lang="en">
 <head>
-    <title>Funny achieved</title>
+    <title>{pageTitle}</title>
 </head>
 <body>
 <a href="/">home</a>
 <a href="/blog">blog</a>
 <h1>about me lmao</h1>
-<h2>Hello and welcome to the epic chilll website lol</h2>
+<h3>Hello 👋</h3>
+<ul>
+<li>My name is {identity.name}</li>
+<li>I live in {identity.country}}</li>
+<li>I currently am a {identity.occupation}</li>
+{identity.hobbies.length >= 2 &&
+<li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[2]}</li>
+}
+</ul>
+<p>My skills are: </p>
+<ul>
+    {skills.map((skill) => <li>{skill}</li>)}
+</ul>
 
 <p>imma be honest idk what im doing</p>
 
+
 <p>But im trying my best</p>
+
 </body>
 </html>
