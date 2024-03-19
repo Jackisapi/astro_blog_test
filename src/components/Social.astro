@@ -1,9 +1,10 @@
 ---
-const {platform, username} = Astro.props;
+const {platform, username ,x_position, y_position} = Astro.props;
 ---
+    <a href={`https://www.${platform}.com/${username}`} class={`px-4 py-2 text-[#0a1310] bg-[#fa8476] align-bottom mb-4`} >{platform}</a>
 
-<a href={`https://www.${platform}.com/${username}`} class="">{platform}</a>
-<!--<style>-->
+
+    <!--<style>-->
 <!--    // a{-->
 <!--    //     padding: 0.5rem 1rem;-->
 <!--    //     color: black;-->
@@ -11,4 +12,3 @@ const {platform, username} = Astro.props;
 <!--    //     text-decoration: none;-->
 <!--    // }-->
 <!--</style>-->
-

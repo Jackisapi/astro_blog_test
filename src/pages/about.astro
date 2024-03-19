@@ -1,4 +1,4 @@
----
+ ---
 import '../styles/global.css'
 import Navigation from "../components/navigation.astro";
 import Footer from "../components/Footer.astro"
@@ -18,7 +18,7 @@ const goal = 4
 // const skillColor = 'navy'
 // const fontWeight = 'Bold'
 // const textCase = 'full-size-kana'
----
+ ---
 
 <html lang="en">
 <head>
@@ -50,6 +50,7 @@ const goal = 4
 {content && <p>Astro pretty cool</p>}
 {finished && <p>i am finished with the funny tutorial</p>}
 {goal === 3 ? <p>My goal is to finish in 3 days</p>: <p>My Goal is not 3 days</p>}
+
 <Footer/>
 </body>
 </html>
