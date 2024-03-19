@@ -15,27 +15,17 @@ const skills = ['python','linux','astro(hopefully)']
 const content = true;
 const finished = false;
 const goal = 4
-const skillColor = 'navy'
-const fontWeight = 'Bold'
-const textCase = 'full-size-kana'
+// const skillColor = 'navy'
+// const fontWeight = 'Bold'
+// const textCase = 'full-size-kana'
 ---
 
 <html lang="en">
 <head>
     <title>{pageTitle}</title>
-    <style define:vars={{skillColor,fontWeight,textCase}}>
-        h1{
-            color: purple;
-            font-size: 4rem;
-        }
-        .skill {
-            color: var(--skillColor);
-            font-weight: var(--fontWeight);
-            text-transform: var(--textCase);
-        }
-    </style>
+
 </head>
-<body>
+<body class="bg-[#5f9ea0]">
 <Navigation></Navigation>
 <h1>about me lmao</h1>
 <h3>Hello</h3>
@@ -48,7 +38,7 @@ const textCase = 'full-size-kana'
 }
 </ul>
 <p>My skills are: </p>
-<ul>
+<ul class='text-[#000080]'>
     {skills.map((skill) => <li class="skill">{skill}</li>)}
 </ul>
 
