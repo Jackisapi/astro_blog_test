@@ -25,16 +25,17 @@ const goal = 4
     <title>{pageTitle}</title>
 
 </head>
-<body class="bg-[#5f9ea0]">
+<!--<body class= "bg-[#5f9ea0]">-->
+<body class="bg-gradient-to-r from-coral-pink to-pastel-purple">
 <Navigation></Navigation>
-<h1>about me lmao</h1>
+<h1 class="text-center">about me lmao</h1>
 <h3>Hello</h3>
 <ul>
 <li>My name is {identity.name}</li>
 <li>I live in {identity.country}}</li>
 <li>I currently am a {identity.occupation}</li>
 {identity.hobbies.length >= 2 &&
-<li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[2]}</li>
+<li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
 }
 </ul>
 <p>My skills are: </p>
@@ -52,6 +53,5 @@ const goal = 4
 {goal === 3 ? <p>My goal is to finish in 3 days</p>: <p>My Goal is not 3 days</p>}
 
 <Footer/>
-
 </body>
 </html>
