@@ -20,38 +20,48 @@ const goal = 4
 // const textCase = 'full-size-kana'
  ---
 
-<html lang="en">
-<head>
-    <title>{pageTitle}</title>
+ <html lang="en">
+ <head>
+     <title>{pageTitle}</title>
+ </head>
+ <!--<body class= "bg-[#5f9ea0]">-->
+ <body class="bg-gradient-to-r from-coral-pink to-pastel-purple">
+ <Navigation></Navigation>
+ <h1 class="text-center">about me lmao</h1>
+ <h3 class="text-center">Hello</h3>
+ <div class="text-center">
+     <ul class="inline-block">
+         <li>My name is {identity.name}</li>
+         <li>I live in {identity.country}}</li>
+         <li>I currently am a {identity.occupation}</li>
+         {identity.hobbies.length >= 2 &&
+                 <p class="transform -translate-x-16">Two of my hobbies are:</p>
+                 <li>{identity.hobbies[0]}</li>
+                 <li>{identity.hobbies[1]}</li>
+         }
+     </ul>
+     <p>My skills are:</p>
+     <ul class="text-[#000080] inline-block">
+         {skills.map((skill) =>
+                 <li class="skill">{skill}</li>
+         )}
+     </ul>
+ </div>
 
-</head>
-<!--<body class= "bg-[#5f9ea0]">-->
-<body class="bg-gradient-to-r from-coral-pink to-pastel-purple">
-<Navigation></Navigation>
-<h1 class="text-center">about me lmao</h1>
-<h3>Hello</h3>
-<ul>
-<li>My name is {identity.name}</li>
-<li>I live in {identity.country}}</li>
-<li>I currently am a {identity.occupation}</li>
-{identity.hobbies.length >= 2 &&
-<li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-}
-</ul>
-<p>My skills are: </p>
-<ul class='text-[#000080]'>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
-</ul>
+ <p class="text-center">imma be honest idk what im doing</p>
 
-<p>imma be honest idk what im doing</p>
+ <p class="text-center">But im trying my best</p>
 
+ {content &&
+         <p class="text-center">Astro pretty cool</p>
+ } {finished &&
+         <p class="text-center">i am finished with the funny tutorial</p>
+ } {goal === 3 ?
+         <p>My goal is to finish in 3 days</p>
+     :
+         <p class="text-center">My Goal is not 3 days</p>
+ }
 
-<p>But im trying my best</p>
-
-{content && <p>Astro pretty cool</p>}
-{finished && <p>i am finished with the funny tutorial</p>}
-{goal === 3 ? <p>My goal is to finish in 3 days</p>: <p>My Goal is not 3 days</p>}
-
-<Footer/>
-</body>
-</html>
+ <Footer/>
+ </body>
+ </html>
