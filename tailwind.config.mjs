@@ -22,6 +22,8 @@ module.exports = {
 			'gray-light': '#d3dce6',
 			'coral-pink': '#f07f75',
 			'pastel-purple' : '#c3b1e1',
+			'better-grey' :  '#313338',
+			'salmon' : '#f26967'
 		},
 		fontFamily: {
 			sans: ['Graphik', 'sans-serif'],
