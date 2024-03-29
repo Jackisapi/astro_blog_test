@@ -1,12 +1,17 @@
 ---
-import Navigation from "./navigation.astro";
-const pageTitle="Funny achieved";
+import Navigation from "./components/navigation.astro";
+import "./styles/global.css";
 
+const {title: pageTitle} = Astro.props;
 ---
+
 <html lang="en">
 <head>
     <title>{pageTitle}</title>
 </head>
 <!--<body class= "bg-[#5f9ea0]">-->
 <body class="bg-gradient-to-r from-coral-pink to-pastel-purple">
-<Navigation></Navigation>
+<Navigation/>
+<slot/>
+</body>
+</html>
