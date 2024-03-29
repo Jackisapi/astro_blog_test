@@ -18,17 +18,17 @@ const goal = 4;
 ---
 
 <Layout title="Chilll">
-  <h1 class="text-center">about me lol</h1>
-  <h3 class="text-center">Hello</h3>
+  <h1 class="text-center text-4xl">about me lol</h1>
+  <h3 class="text-center text-xl">Hello</h3>
   <div class="text-center">
-    <ul class="inline-block">
+    <ul class="inline-block list-disc space-y-2">
       <li>My name is {identity.name}</li>
-      <li>I live in {identity.country}}</li>
+      <li>I live in {identity.country}</li>
       <li>I currently am a {identity.occupation}</li>
       {
         identity.hobbies.length >= 2 && (
           <>
-            <p class="-translate-x-16 transform">Two of my hobbies are:</p>
+            <p>Two of my hobbies are:</p>
             <li>{identity.hobbies[0]}</li>
             <li>{identity.hobbies[1]}</li>
           </>
@@ -36,7 +36,7 @@ const goal = 4;
       }
     </ul>
     <p>My skills are:</p>
-    <ul class="inline-block text-[#000080]">
+    <ul class="inline-block list-disc space-y-2 text-[#000080]">
       {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
   </div>

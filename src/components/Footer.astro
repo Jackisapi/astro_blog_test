@@ -2,13 +2,10 @@
 import Social from "./Social.astro";
 ---
 
-<!--<div class=' flex flex-col justify-center items-center absolute bottom-0 content-center'>--><!--<div class="absolute text-center bottom-0">--><!--    <footer>--><!--        <Social platform="github" username="jackisapi" />--><!--        <Social platform="linkedin" username="/in/jackisapi" />--><!--    </footer>--><!--</div>-->
-<div class="bottom-0 flex flex-col text-center">
-  <div class="translate-y-128 transform">
-    <!--bg-opacity-25-->
-    <header class="bg-better-grey/70 py-4">
-      <Social platform="github" username="jackisapi" />
-      <Social platform="linkedin" username="jackisapi" />
-    </header>
+<div class="flex min-h-screen flex-col">
+  <main class="flex-grow"></main>
+  <div class="bg-better-grey/70 py-4 text-center">
+    <Social platform="github" username="jackisapi" />
+    <Social platform="linkedin" username="jackisapi" />
   </div>
 </div>
