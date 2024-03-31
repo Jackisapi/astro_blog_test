@@ -29,6 +29,7 @@ module.exports = {
         "pastel-purple": "#c3b1e1",
         "better-grey": "#313338",
         salmon: "#f26967",
+        yellow: "#ffe9a5",
       },
       spacing: {
         128: "32rem",

@@ -1,0 +1,9 @@
+---
+const { color, width } = Astro.props;
+---
+
+<div
+  class={`bg-${color} w-${width} absolute transform text-balance rounded-md bg-opacity-25 bg-contain transition hover:bg-opacity-100`}
+>
+  <slot />
+</div>

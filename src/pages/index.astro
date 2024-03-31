@@ -1,14 +1,17 @@
 ---
 import Footer from "../components/Footer.astro";
 import Layout from "../layout.astro";
+import Container from "../components/Container.astro/";
+import Emoji from "../components/emoji.astro";
 
 const identity = {
   name: "Jack lol",
-  country: "Murica",
+  country: "The USA",
   occupation: "Student ;_;",
   hobbies: ["nerd crap", "scoot board"],
 };
 const skills = ["python", "linux", "astro(hopefully)"];
+
 const content = true;
 const finished = false;
 const goal = 4;
@@ -18,42 +21,77 @@ const goal = 4;
 ---
 
 <Layout title="Chilll">
-  <h1 class="text-center text-4xl">about me lol</h1>
-  <h3 class="text-center text-xl">Hello</h3>
-  <div class="text-center">
-    <ul class="inline-block list-disc space-y-2">
-      <li>My name is {identity.name}</li>
-      <li>I live in {identity.country}</li>
-      <li>I currently am a {identity.occupation}</li>
-      {
-        identity.hobbies.length >= 2 && (
-          <>
-            <p>Two of my hobbies are:</p>
-            <li>{identity.hobbies[0]}</li>
-            <li>{identity.hobbies[1]}</li>
-          </>
-        )
-      }
-    </ul>
-    <p>My skills are:</p>
-    <ul class="inline-block list-disc space-y-2 text-[#000080]">
-      {skills.map((skill) => <li class="skill">{skill}</li>)}
-    </ul>
+  <div class="flex items-center justify-center py-2">
+    <h1
+      class="h-10 w-56 translate-y-1 transform items-center rounded-md bg-purple-900 text-4xl text-coral-pink"
+    >
+      About Me : D
+    </h1>
+  </div>
+  <div
+    class="flex -translate-x-24 translate-y-28 transform items-center justify-center py-2 text-6xl"
+  >
+    <Container color="blue" width="56"> Hello &#9996; My Name Is Jack </Container>
   </div>
 
-  <p class="text-center">imma be honest idk what im doing</p>
+  <div
+    class="flex translate-x-48 translate-y-1 transform items-center justify-center text-center text-4xl"
+  >
+    <Container color="salmon" width="30">
+      I Live In {identity.country} &#x1F1FA;&#x1F1F8;
+    </Container>
+  </div>
 
-  <p class="text-center">But im trying my best</p>
-
-  {content && <p class="text-center">Astro pretty cool</p>}
-  {finished && <p class="text-center">i am finished with the funny tutorial</p>}
-  {
-    goal === 3 ? (
-      <p>My goal is to finish in 3 days</p>
-    ) : (
-      <p class="text-center">My Goal is not 3 days</p>
-    )
-  }
-
-  <Footer />
+  <div
+    class="flex translate-x-72 translate-y-32 transform items-center justify-center text-center text-4xl"
+  >
+    <Container color="blue" width="5">
+      <img src="/images/miso.jpg" class="h-40 w-80" />
+      <p>This is my son his name is miso</p>
+    </Container>
+  </div>
 </Layout>
+
+<!--</div>-->
+<!--<div class="translate-y-4 transform">-->
+<!--  <h3 class="text-center text-xl">Hello</h3>-->
+<!--  <div class="flex items-center justify-center">-->
+<!--    <div class="w-56 bg-blue bg-opacity-25 bg-contain transition hover:bg-opacity-100">-->
+<!--      <div class="text-center">-->
+<!--        <ul class="inline-block list-disc space-y-2">-->
+<!--          <li>My name is {identity.name}</li>-->
+<!--          <li>I live in {identity.country}</li>-->
+<!--          <li>I currently am a {identity.occupation}</li>-->
+<!--          {-->
+<!--            identity.hobbies.length >= 2 && (-->
+<!--              <>-->
+<!--                <p>Two of my hobbies are:</p>-->
+<!--                <li>{identity.hobbies[0]}</li>-->
+<!--                <li>{identity.hobbies[1]}</li>-->
+<!--              </>-->
+<!--            )-->
+<!--          }-->
+<!--        </ul>-->
+<!--        <p>My skills are:</p>-->
+<!--        <ul class="inline-block list-disc space-y-2 text-[#000080]">-->
+<!--          {skills.map((skill) => <li class="skill">{skill}</li>)}-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--      <p class="text-center">imma be honest idk what im doing</p>-->
+
+<!--      <p class="text-center">But im trying my best</p>-->
+
+<!--      {content && <p class="text-center">Astro pretty cool</p>}-->
+<!--      {finished && <p class="text-center">i am finished with the funny tutorial</p>}-->
+<!--      {-->
+<!--        goal === 3 ? (-->
+<!--          <p>My goal is to finish in 3 days</p>-->
+<!--        ) : (-->
+<!--          <p class="text-center">My Goal is not 3 days</p>-->
+<!--        )-->
+<!--      }-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<Footer />
