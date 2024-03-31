@@ -19,7 +19,7 @@ module.exports = {
     extend: {
       colors: {
         blue: "#1fb6ff",
-        pink: "#ff49db",
+        pink: "#f379db",
         orange: "#ff7849",
         green: "#13ce66",
         "gray-dark": "#273444",
@@ -29,7 +29,7 @@ module.exports = {
         "pastel-purple": "#c3b1e1",
         "better-grey": "#313338",
         salmon: "#f26967",
-        yellow: "#ffe9a5",
+        yellow: "#ffca1d",
       },
       spacing: {
         128: "32rem",
