@@ -1,8 +1,8 @@
 ---
 import Footer from "../components/Footer.astro";
 import Layout from "../layout.astro";
-import Container from "../components/Container.astro/";
-
+import Container from "../components/Container.astro";
+import "../styles/global.css";
 const identity = {
   name: "Jack lol",
   country: "The USA",
@@ -25,10 +25,10 @@ const skills = ["Python", "linux", "Astro (Working On)", "And A Variety of Compu
     </h1>
   </div>
   <div
-    class="flex w-auto -translate-x-24 translate-y-28 transform items-center justify-center bg-auto py-2 text-6xl"
+    class="flex w-auto -translate-x-24 translate-y-28 transform items-center justify-center bg-blue text-6xl"
   >
     <Container color="blue" width="56"> Hello &#9996; My Name Is Jack </Container>
-  </div>
+  </div>n
 
   <div
     class="flex translate-x-48 translate-y-1 transform items-center justify-center text-center text-4xl"
@@ -39,7 +39,7 @@ const skills = ["Python", "linux", "Astro (Working On)", "And A Variety of Compu
   </div>
 
   <div
-    class="flex translate-x-48 translate-y-36 transform items-center justify-center bg-auto text-center text-4xl"
+    class="flex translate-x-48 translate-y-36 transform items-center justify-center bg-yellow text-center text-4xl"
   >
     <Container color="yellow" class="flex">
       <p class="text-center">This is my son</p>
@@ -49,7 +49,7 @@ const skills = ["Python", "linux", "Astro (Working On)", "And A Variety of Compu
   </div>
 
   <div
-    class="flex -translate-x-24 translate-y-72 transform list-inside items-center justify-center bg-auto py-2 text-center"
+    class="flex -translate-x-24 translate-y-72 transform list-inside items-center justify-center bg-green bg-auto text-center"
   >
     <Container color="green" width="4">
       <p class="text-3xl">My Skills Include</p>
@@ -61,17 +61,17 @@ const skills = ["Python", "linux", "Astro (Working On)", "And A Variety of Compu
   </div>
 
   <div
-    class="flex translate-x-48 translate-y-64 transform list-inside justify-center bg-auto py-1 text-center"
+    class="flex translate-x-48 translate-y-72 transform list-inside justify-center bg-cyan-700 text-center"
   >
-    <Container color="purple-400" width="4" class="">
-      <p class="text-3xl">My Hobbies are</p>
+    <Container color="cyan-700" width="4">
+      <p class="text-3xl">My Hobbies Include</p>
       <li>{identity.hobbies[0]}</li>
       <img class="h-76 w-72 rounded-md" src="/images/me.jpg" alt="dripped" />
     </Container>
   </div>
 
   <div
-    class="flex -translate-x-32 translate-y-80 transform list-inside justify-center bg-auto px-4 py-6 text-center"
+    class="flex -translate-x-32 translate-y-80 transform list-inside justify-center bg-red-600 bg-auto px-4 text-center"
   >
     <Container color="red-600" ,width="5">
       <li>{identity.hobbies[1]}</li>
@@ -81,10 +81,8 @@ const skills = ["Python", "linux", "Astro (Working On)", "And A Variety of Compu
     </Container>
   </div>
 
-  <div
-    class="flex translate-x-44 translate-y-144 transform list-inside justify-center bg-auto py-12 text-center"
-  >
-    <Container color="green" width="5">
+  <div class="flex bg-amber-300 bg-center">
+    <Container color="amber-300" width="5" class="">
       <p class="text-center text-3xl">And Much More!!!</p>
       <li>{identity.hobbies[2]}</li>
       <li>{identity.hobbies[3]}</li>
@@ -92,14 +90,5 @@ const skills = ["Python", "linux", "Astro (Working On)", "And A Variety of Compu
       <li>{identity.hobbies[5]}</li>
     </Container>
   </div>
-  <div
-    class="flex translate-x-56 translate-y-144 transform list-inside justify-center bg-auto px-2 py-24 text-center"
-  >
-    <Container color="pink" ,width="5">
-      <p>Basically The Point Of this Website</p>
-      <p>Is to show a little bit of my life (blog coming soon)</p>
-      <p>Thanks For Joining me on this Journey &#9829;</p>
-    </Container>
-  </div>
 </Layout>
-<Footer />
+<Footer class="translate-y-32" />
