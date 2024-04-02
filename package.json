@@ -3,16 +3,17 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "format": "prettier . --write",
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "format": "node_modules/.bin/prettier . --write",
+    "dev": "node_modules/.bin/astro dev",
+    "start": "node_modules/.bin/astro dev",
+    "build": "node_modules/.bin/astro build",
+    "preview": "node_modules/.bin/astro preview",
+    "astro": "node_modules/.bin/astro"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.5.12",
+    "package-json": "^10.0.0",
     "tailwind": "^4.0.0",
     "tailwindcss": "^3.4.1"
   },
