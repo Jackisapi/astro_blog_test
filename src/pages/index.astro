@@ -3,6 +3,9 @@ import Footer from "../components/Footer.astro";
 import Layout from "../layout.astro";
 import Container from "../components/Container.astro";
 import "../styles/global.css";
+import { Image } from 'astro:assets';
+import Loser from "../../public/me.jpg";
+import Miso from "../../public/miso.jpg";
 const identity = {
   name: "Jack lol",
   country: "The USA",
@@ -43,7 +46,7 @@ const skills = ["Python", "linux", "Astro (Working On)", "And A Variety of Compu
   >
     <Container color="yellow" class="flex">
       <p class="text-center">This is my son</p>
-      <img src="/public/miso.jpg" class="h-40 w-80 rounded-md" alt="miso" />
+      <Image src={Miso} alt="Da good boi" width="300" height="300"/>
       <p class="text-center">His name is Miso</p>
     </Container>
   </div>
@@ -61,22 +64,23 @@ const skills = ["Python", "linux", "Astro (Working On)", "And A Variety of Compu
   </div>
 
   <div
-    class="flex translate-x-48 translate-y-72 transform list-inside justify-center bg-cyan-700 text-center"
+    class="flex translate-x-48 translate-y-64 transform list-inside justify-center bg-cyan-700 text-center"
   >
     <Container color="cyan-700" width="4">
       <p class="text-3xl">My Hobbies Include</p>
       <li>{identity.hobbies[0]}</li>
-      <img class="h-76 w-72 rounded-md" src="/public/me.jpg" alt="dripped" />
+      <Image src={Loser} alt="Look at dis NERD Couldnt be me lmao" width="300" height="300"/>
+
     </Container>
   </div>
 
   <div
-    class="flex -translate-x-32 translate-y-80 transform list-inside justify-center bg-red-600 bg-auto px-4 text-center"
+    class="flex -translate-x-32 translate-y-96 transform list-inside justify-center bg-red-600 bg-auto px-4 text-center"
   >
     <Container color="red-600" ,width="5">
       <li>{identity.hobbies[1]}</li>
-      <video width="320" height="60" controls>
-        <source src="/public/scoot.mp4" type="video/mp4" />
+      <video width="320" height="60" class="h-80 w-56" controls>
+        <source src="/scoot.mp4" type="video/mp4" />
       </video>
     </Container>
   </div>
