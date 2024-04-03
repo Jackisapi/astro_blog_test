@@ -3,7 +3,7 @@ import Footer from "../components/Footer.astro";
 import Layout from "../layout.astro";
 import Container from "../components/Container.astro";
 import "../styles/global.css";
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 import Loser from "../../public/me.jpg";
 import Miso from "../../public/miso.jpg";
 const identity = {
@@ -46,7 +46,7 @@ const skills = ["Python", "linux", "Astro (Working On)", "And A Variety of Compu
   >
     <Container color="yellow" class="flex">
       <p class="text-center">This is my son</p>
-      <Image src={Miso} alt="Da good boi" width="300" height="300"/>
+      <Image src={Miso} alt="Da good boi" width="300" height="300" />
       <p class="text-center">His name is Miso</p>
     </Container>
   </div>
@@ -69,8 +69,7 @@ const skills = ["Python", "linux", "Astro (Working On)", "And A Variety of Compu
     <Container color="cyan-700" width="4">
       <p class="text-3xl">My Hobbies Include</p>
       <li>{identity.hobbies[0]}</li>
-      <Image src={Loser} alt="Look at dis NERD Couldnt be me lmao" width="300" height="300"/>
-
+      <Image src={Loser} alt="Look at dis NERD Couldnt be me lmao" width="300" height="300" />
     </Container>
   </div>
 
@@ -85,14 +84,28 @@ const skills = ["Python", "linux", "Astro (Working On)", "And A Variety of Compu
     </Container>
   </div>
 
-  <div class="flex bg-amber-300 bg-center">
-    <Container color="amber-300" width="5" class="">
-      <p class="text-center text-3xl">And Much More!!!</p>
+  <div
+    class="sticky flex translate-x-44 translate-y-144 list-inside place-items-baseline justify-center py-32 text-center"
+  >
+    <Container color="amber-300" width="5">
+      <p class="text-center align-top text-3xl">And Much More!!!</p>
       <li>{identity.hobbies[2]}</li>
       <li>{identity.hobbies[3]}</li>
       <li>{identity.hobbies[4]}</li>
       <li>{identity.hobbies[5]}</li>
     </Container>
   </div>
+
+  = <div
+    class="text-cente sticky flex -translate-x-40 translate-y-96 list-inside place-items-baseline justify-center py-20"
+  >
+    <Container color="fuchsia-700" width="5">
+      <p class="items-center text-center align-top text-2xl">
+        Basically The Point Of This website <br /> is to be a little spot where i <br /> can just talk
+        about life and stuff <br /> So you dear viewer of the interwebs <br /> Thanks for joining me
+        <br /> With love &#x2665; Jackisapi
+      </p>
+    </Container>
+  </div>
+  <Footer />
 </Layout>
-<Footer class="translate-y-32" />
